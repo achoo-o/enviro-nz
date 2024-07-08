@@ -1,0 +1,32 @@
+:root {
+  --nav-bg: black;
+  --nav-font: black;
+}
+
+nav {
+
+  border-bottom: 2px solid black;
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 30px;
+    list-style-type: none;
+  }
+
+  li {
+    margin-inline: 8vw;
+    display: inline;
+    text-transform: uppercase;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+}
