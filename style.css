@@ -30,7 +30,7 @@ nav {
   border-bottom: 1px solid var(--nav-font);
   text-align: center;
 
-  ul  {
+  ul {
     margin: 0;
     padding-inline: 20px;
     padding-block: 30px;
@@ -74,7 +74,7 @@ nav {
 }
 
 .feature {
-  position: absolute;
+  position: relative;
   top: 30px;
   left: 30px;
   z-index: 1;
