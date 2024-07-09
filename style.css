@@ -19,6 +19,14 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 
+  h2 {
+    margin-block: 8vh;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--h2);
+  }
+
   a:visited {
     color: var(--link);
   }
@@ -130,11 +138,9 @@ nav {
 *                BODY                *
 **************************************/
 
-.content-wrapper {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
+.margin {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /***   Section 1   ***/
@@ -143,14 +149,6 @@ nav {
 
   margin-top: 200px;
   margin-bottom: 30px;
-
-  h2 {
-    margin-block: 10vh;
-    font-size: 50px;
-    font-weight: 800;
-    text-transform: capitalize;
-    color: var(--h2);
-  }
 
   h3 {
     margin-block: 5px;
@@ -202,14 +200,37 @@ nav {
 
 /***   Section 2   ***/
 
+.section2 {
+  padding-block: 3em;
+  background-color: rgb(230, 230, 230);
+
+  h2 {
+    margin-block: 0;
+  }
+
+}
+
+/***   Section 3   ***/
+
+.section3 {
+  position: relative;
+}
+
 .background-container2 {
   position: relative;
   width: 100%;
-  height: 80vh;
-  z-index: 2;
+  height: 85vh;
   filter: brightness(70%);
   background-image: url("./images/young-man-recycling.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.image-text-overlay {
+  position: absolute;
+  top: 20vh;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
 }
