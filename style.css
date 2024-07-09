@@ -137,18 +137,17 @@ nav {
     width: 100%;
     height: auto;
   }
-  p {
-    padding-inline: 3em;
-  }
 }
 
 .row1 {
   display: flex;
   gap: 10vw;
   margin-block: 20px;
-
+  span {
+    flex: 1;
+  }
   p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -159,6 +158,6 @@ nav {
   padding-inline: 30px;
 
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
