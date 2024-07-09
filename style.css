@@ -133,6 +133,10 @@ nav {
     font-size: 30px;
   }
 
+  h4 {
+    text-align: center;
+  }
+
   img {
     width: 100%;
     height: auto;
