@@ -108,3 +108,9 @@ nav {
   transform: translateX(-50%);
   width: 80%;
 }
+
+/***   Section 1   ***/
+
+.section-1 {
+  display: grid;
+}
