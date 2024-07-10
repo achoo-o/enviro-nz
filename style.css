@@ -27,6 +27,13 @@ body {
     color: var(--h2);
   }
 
+  h3 {
+    margin-block: 5px;
+    color: var(--h3);
+    text-align: center;
+    font-size: 30px;
+  }
+
   a:visited {
     color: var(--link);
   }
@@ -150,21 +157,12 @@ nav {
   margin-top: 200px;
   margin-bottom: 30px;
 
-  h3 {
-    margin-block: 5px;
-    color: var(--h3);
-    text-align: center;
-    font-size: 30px;
-  }
-
   h4 {
     text-align: center;
   }
 
   img {
-    display: block;
-    margin-inline: auto;
-    max-width: 70%;
+    width: 80%;
   }
 
   button {
@@ -177,13 +175,22 @@ nav {
   display: flex;
   gap: 3vw;
   margin-block: 20px;
+  
   span {
     flex: 1;
   }
+  
   p {
     margin-block: 1.8em;
     font-size: 20px;
     line-height: 1.8em;
+  }
+
+  img {
+    display: block;
+    margin-block: 1.5em;
+    margin-inline: auto;
+    max-width: 100%;
   }
 }
 
@@ -202,12 +209,21 @@ nav {
 
 .section2 {
   padding-block: 3em;
-  background-color: rgb(230, 230, 230);
-
+  background: rgb(230,230,230);
   h2 {
     margin-block: 0;
   }
+}
 
+.section2a {
+  margin-block: 6vh;
+}
+
+.section2a h3 {
+  color: rgb(77, 87, 78);
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /***   Section 3   ***/
