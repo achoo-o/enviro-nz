@@ -188,7 +188,7 @@ nav {
 }
 
 .extra-content {
-  display: flex;
+  display: none;
   gap: 6vw;
   margin-block: 20px;
   padding-inline: 30px;
