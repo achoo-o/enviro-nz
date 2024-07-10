@@ -217,13 +217,25 @@ nav {
 
 .section2a {
   margin-block: 6vh;
+  span {
+    display: table;
+    margin: 0 auto;
+  }
 }
 
 .section2a h3 {
+  display: inline-block;
   color: rgb(77, 87, 78);
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.icon {
+  display: inline-block !important;
+  margin-block: 0 !important;
+  margin-inline: 0.5em !important;
+  width: 30px;
 }
 
 /***   Section 3   ***/
