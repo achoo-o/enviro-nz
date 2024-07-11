@@ -5,8 +5,8 @@
   --h2: rgb(77, 77, 77);
   --h3: rgb(53, 53, 53);
   --link: rgb(47, 117, 40);
-  --accent: rgb(223, 105, 27);
-  --accent-darker: rgb(202, 83, 28);
+  --accent: rgb(247, 224, 14);
+  --accent-darker: rgb(247, 212, 12);
   --accent-alt: rgb(36, 50, 129);
   --acent-alt-darker: rgb(37, 37, 92);
 }
@@ -60,6 +60,23 @@ body {
   }
 }
 
+/* Alt button style */
+
+.btn-accent {
+  color: rgb(54, 54, 54);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-darker);
+  border: 1px solid var(--accent-darker);
+}
+
+/**/
+
 .line {
   display: block;
   margin-inline: auto;
@@ -67,6 +84,12 @@ body {
   height: 2px;
   width: 100%;
   background-color: grey;
+}
+
+.center-block {
+  display: block;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .green {
