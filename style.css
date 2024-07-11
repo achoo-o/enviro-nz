@@ -86,6 +86,15 @@ body {
   background-color: grey;
 }
 
+.line-short {
+  display: block;
+  margin-inline: auto;
+  margin-block: 2em;
+  height: 2px;
+  width: 65%;
+  background-color: grey;
+}
+
 .center-block {
   display: block;
   margin-inline: auto;
@@ -183,8 +192,8 @@ nav {
 **************************************/
 
 .margin {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /***   Section 1   ***/
@@ -283,6 +292,12 @@ nav {
   span {
     display: table;
     margin: 0 auto;
+  }
+  p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
   }
 }
 
