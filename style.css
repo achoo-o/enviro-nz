@@ -84,7 +84,7 @@ nav {
   }
 
   li {
-    margin-inline: 8vw;
+    margin-inline: 4vw;
     display: inline;
     text-transform: uppercase;
     transition-duration: 0.4s;
