@@ -5,7 +5,7 @@
     buttons[i].addEventListener("click", function() {
       let content = this.nextElementSibling.style
       if (content.display === "none") {
-        content.display = "flex"
+        content.display = "block"
       } else {
         content.display = "none"
       }
