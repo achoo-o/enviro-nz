@@ -6,8 +6,10 @@
       let content = this.nextElementSibling.style
       if (content.display === "none") {
         content.display = "block"
+        buttons[i].innerHTML = "Show less"
       } else {
         content.display = "none"
+        buttons[i].innerHTML = "Learn more"
       }
     })
   }
