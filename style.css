@@ -15,57 +15,6 @@ html {
   background-color: white;
 }
 
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-
-  h2 {
-    margin-block: 8vh;
-    font-size: 50px;
-    font-weight: 800;
-    text-transform: capitalize;
-    color: var(--h2);
-  }
-
-  h3 {
-    margin-block: 5px;
-    color: var(--h3);
-    text-align: center;
-    font-size: 30px;
-  }
-
-  p {
-    margin-block: 1.8em;
-    font-size: 20px;
-    line-height: 1.8em;
-  }
-
-  a:visited {
-    color: var(--link);
-  }
-
-  button {
-    margin-block: 1.7em;
-    padding-inline: 15px;
-    padding-block: 18px;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    background-color:var(--accent-alt);
-    border-radius: 5px;
-    border: 1px solid var(--acent-alt-darker);
-    cursor: pointer;
-    transition-duration: 0.7s;
-  }
-  
-  button:hover {
-    background-color: var(--acent-alt-darker);
-  }
-}
-
 /* Alt button style */
 
 .btn-accent {
@@ -113,47 +62,81 @@ body {
 }
 
 /*************************************
-*               HEADER               *
+*             Mobile Style           *
 **************************************/
 
+body {
+
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  h1, h2, h3, h4, h5, h6, p, img {
+    margin-inline: 20px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-block: 35px;
+  }
+
+  h1 {
+    color: var(--h1);
+  }
+
+  h2 {
+    color: var(--h2);
+  }
+
+  h3 {
+    color: var(--h3);
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+
+  button {
+    margin-block: 1.7em;
+    padding-inline: 15px;
+    padding-block: 18px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:var(--accent-alt);
+    border-radius: 5px;
+    border: 1px solid var(--acent-alt-darker);
+    cursor: pointer;
+    transition-duration: 0.7s;
+  }
+  
+  button:hover {
+    background-color: var(--acent-alt-darker);
+  }
+}
+
 nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  width: 70vw;
-  border-bottom: 1px solid var(--nav-font);
-  text-align: center;
+  margin-block: 20px;
 
   ul {
-    margin: 0;
-    padding-inline: 20px;
-    padding-block: 30px;
-    color: var(--nav-font);
-    font-weight: 650;
-    letter-spacing: 1px;
+    padding: 0;
+    text-align: center;
     list-style-type: none;
   }
 
   li {
-    margin-inline: 4vw;
     display: inline;
-    text-transform: uppercase;
+    margin-inline: 20px;
+    color: var(--nav-font);
+    font-weight: 500;
     transition-duration: 0.4s;
   }
-
-  li:hover {
+  
+  li:hover, li:active {
     color: var(--nav-hover);
-    letter-spacing: 2px;
-    cursor: pointer;
     transition-duration: 0.6s;
   }
-
-  a {
-    text-decoration: none;
-    color: var(--nav-hover);
-  }
-
 }
 
 /********************************************************************************** For tablets : */
@@ -164,6 +147,76 @@ nav {
 /********************************************************************************** For desktops : */
 
 @media only screen and (min-width: 768px) {
+
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  
+    h2 {
+      margin-block: 8vh;
+      font-size: 50px;
+      font-weight: 800;
+      text-transform: capitalize;
+      color: var(--h2);
+    }
+  
+    h3 {
+      margin-block: 5px;
+      color: var(--h3);
+      text-align: center;
+      font-size: 30px;
+    }
+  
+    p {
+      margin-block: 1.8em;
+      font-size: 20px;
+      line-height: 1.8em;
+    }
+  
+    a:visited {
+      color: var(--link);
+    }
+
+  nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 70vw;
+    border-bottom: 1px solid var(--nav-font);
+    text-align: center;
+  
+    ul {
+      margin: 0;
+      padding-inline: 20px;
+      padding-block: 30px;
+      color: var(--nav-font);
+      font-size: 16px;
+      font-weight: 650;
+      letter-spacing: 1px;
+      list-style-type: none;
+    }
+  
+    li {
+      margin-inline: 80px;
+      display: inline;
+      text-transform: uppercase;
+      transition-duration: 0.4s;
+    }
+  
+    li:hover {
+      color: var(--nav-hover);
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition-duration: 0.6s;
+    }
+  
+    a {
+      text-decoration: none;
+      color: var(--nav-hover);
+    }
+  
+  }
 
   .background-container {
     position: relative;
